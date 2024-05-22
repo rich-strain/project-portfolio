@@ -1,0 +1,8 @@
+.gradient-hover:hover > *{
+    transform: scale(1.1);
+    color: #18B7BE;
+    background-image: -webkit-linear-gradient(92deg, #18B7BE, #072A40);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 10s infinite linear;
+}
