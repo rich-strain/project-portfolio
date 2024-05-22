@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+body {
+    background-color: #F9F7F0;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #178CA4;
+    height: 100%; 
+}
+.gray-text {
+    color: gray;
+}
+
+#main-container{
+    position: relative;
+    width: 85%;
+    margin: 50px auto;
+}
+
+/* Nav Bar */
+.header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.header nav ul li {
+    margin: 0 5px;
+}
+
+.header nav ul li a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #178CA4;
+    text-decoration: none;
+}
+.header nav ul li a:hover{
+    color:#072A40;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ---- About Me Section ---- */
+.avatar img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    border: 2px solid;
+}
+
+/* ---- Skills Section ---- */
+#skills {
+    width: 100%;
+    margin-bottom: 75px;
+}
+.skills-heading {
+    font-family: monospace;
+    font-size: 25px;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+    
+.skills-heading:before,
+.skills-heading:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 10px 0 0;
+    flex: 1 0 20px;
+}
+
+.skills-heading:after {
+    margin: 0 0 0 10px;
+}
+
+.fa-icon {
+    font-size: 3rem;
+    color: gray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all .3s;
+}
+
+.fa-icon:hover {
+    transform: scale(1.1);
+    color: #18B7BE;
+    background-image: -webkit-linear-gradient(92deg, #18B7BE, #072A40);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 10s infinite linear;
+}
+
+
+/* ---- Projects Section ---- */
+.projects-heading {
+    display: flex;
+    font-size: 25px;
+    font-family: monospace;
+    width: 100%;
+    margin-top: 30px
+}
+
+.projects-heading:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 20px;
+    flex: 1 0 20px;
+}
+.projects-heading:after {
+    margin: 15px 0 0 15px;
+}
+
+.flex-container {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .flex-item-top {
+   width: 100%;
+    padding: 0px;
+    border-radius: 5px;
+    border: 2px solid;
+  }
+  .flex-item-top img{
+    width: 592px;
+    height: 333px;
+    
+  }
+  .flex-item {
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #178CA4  ;
+    margin: 5px;
+  }
+
+/* Contact Section */
+.contact-heading {
+    display: flex;
+    font-size: 25px;
+    font-family: monospace;
+    width: 100%;
+    margin-top: 30px
+}
+
+.contact-heading:before {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+.contact-heading:before {
+    margin: 15px 15px 0 0;
+}
+
+@media screen and (max-width: 700px) {
+    .flex-item:first-child {
+        width: 100%;
+    }
+
+}
+
+/* Footer Section*/
+.footer-flex {
+    display: flex;
+    margin: 0 25px 0 25px;
+    justify-content: space-evenly;
+    align-items: center;
+}
